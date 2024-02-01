@@ -1,19 +1,22 @@
-document.addEventListener('DOMContentLoaded', function () {
-    var raiz = document.documentElement;
+function DOM() {
+    let dom = document.getElementById('dom');
+    dom.textContent = valorDOM(document.documentElement);
+}
 
-    mostrarDOM(raiz, 0);
+function valorDOM(elemento) {
+    let imprime = `${etiquetasDOM(elemento)}\n${Array.from(elemento.children).map(valorDOM).join('')}`;
+    return imprime;
+}
 
-    function mostrarDOM(nodo, profundidad) {
-        var nodosActuales = `<${nodo.nodeName}>`;
+function etiquetasDOM(elemento) {
+    let valor = elemento.nodeName.toLowerCase();
+    let etiqueta = atributoDOM(elemento);
+    return `<${valor}${etiqueta}>`;
+}
 
-        document.getElementById('dom').textContent += nodosActuales;
+function atributoDOM(elemento) {
+    let atributo = elemento.attributes;
+    return Array.from(atributo).map(attr => ` ${attr.name}="${attr.value}"`).join('');
+}
 
-        for (var i = 0; i < nodo.children.length; i++) {
-            mostrarDOM(nodo.children[i], profundidad + 1);
-        }
-    }
-
-    function elementosDom(){
-        
-    }
-});
+window.onload = DOM;
