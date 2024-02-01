@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 9</title>
+    <script src="U05-A09-JMondelo.js"></script>
+</head>
+
+<body>
+    <form id="formulario" method="post" enctype="text/plain" action="mailto:matematicas@matematicas.com">
+
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <br>
+            <label for="nombre">Introduce tu nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br><br>
+            <label for="Mensaje">Mensaje:</label>
+            <br>
+            <textarea for="Mensaje" rows="10" cols="50" id="Mensaje" name="Mensaje"></textarea>
+            <br>
+        </fieldset>
+        <br>
+
+        <label for="color">Elige un color:</label>
+        <br>
+        <input type="radio" id="color" name="color" value="rojo">
+        <label for="color">rojo</label>
+        <br>
+        <input type="radio" id="color" name="color" value="verde">
+        <label for="color">verde</label>
+        <br>
+        <input type="radio" id="color" name="color" value="azul">
+        <label for="color">azul</label>
+        <br><br>
+
+        <label for="asignatura">Selecciona una asignatura:</label>
+        <select name="asignatura" id="asignatura" onchange="emails()">
+            <option value="matematicas">matematicas</option>
+            <option value="lengua">lengua</option>
+            <option value="ingles">ingles</option>
+        </select>
+        <br><br>
+
+        <label for="color">Selecciona los dias con disponibilidad:</label>
+        <br>
+        <input type="checkbox" id="dia" name="dia" value="lunes">
+        <label for="dia">lunes</label>
+        <br>
+        <input type="checkbox" id="dia" name="dia" value="martes">
+        <label for="dia">martes</label>
+        <br>
+        <input type="checkbox" id="dia" name="dia" value="miercoles>
+            <label for=" dia">miercoles</label>
+        <br>
+        <input type="checkbox" id="dia" name="dia" value="jueves">
+        <label for="dia">jueves</label>
+        <br>
+        <input type="checkbox" id="dia" name="dia" value="viernes">
+        <label for="dia">viernes</label>
+        <br><br>
+
+        <label for="diaPreferente">Selecciona el dia preferente:</label>
+        <select id="diaPreferente" name="diaPreferente">
+            <option value="lunes">Lunes</option>
+            <option value="martes">Martes</option>
+            <option value="miercoles">Miércoles</option>
+            <option value="jueves">Jueves</option>
+            <option value="viernes">Viernes</option>
+        </select>
+        <br><br>
+
+        <button type="submit"> Haz click para enviar informacion </button>
+        <button type="reset"> Comenzar a rellenar de nuevo </button>
+        <button>
+            <a href="https://www.google.com" style="text-decoration: none; color: black;">
+                Haz click sobre mi.
+            </a>
+        </button>
+
+    </form>
+</body>
+
+</html>

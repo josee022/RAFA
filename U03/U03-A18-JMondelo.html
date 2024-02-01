@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <h2>Calculadora Científica</h2>
+
+    <table>
+
+        <input type="text" id="numero">
+
+        <tr>
+            <th><input type="button" value="√" onclick="cuadrado()"></th>
+            <th><input type="button" value="log" onclick="operadores_trigonometricos('log')"></th>
+            <th><input type="button" value="π" onclick="operadores_trigonometricos('pi')"></th>
+            <th><input type="button" value="x³" onclick="potencia(3)"></th>
+
+        </tr>
+
+        <tr>
+            <th><input type="button" value="sin" onclick="operadores_trigonometricos('sin')"></th>
+            <th><input type="button" value="cos" onclick="operadores_trigonometricos('cos')"></th>
+            <th><input type="button" value="tan" onclick="operadores_trigonometricos('tan')"></th>
+            <th><input type="button" value="x²" onclick="potencia(2)"></th>
+        </tr>
+
+        <tr>
+            <th><input type="button" value="C" onclick="borrar()"></th>
+            <th><input type="button" value="/" onclick="operador('/')"></th>
+            <th><input type="button" value="*" onclick="operador('*')"></th>
+            <th><input type="button" value="DEL" onclick="borrar()"></th>
+        </tr>
+
+        <tr>
+            <th><input type="button" value="7" onclick="añadir(7)"></th>
+            <th><input type="button" value="8" onclick="añadir(8)"></th>
+            <th><input type="button" value="9" onclick="añadir(9)"></th>
+            <th><input type="button" value="-" onclick="operador('-')"></th>
+        </tr>
+
+        <tr>
+            <th><input type="button" value="4" onclick="añadir(4)"></th>
+            <th><input type="button" value="5" onclick="añadir(5)"></th>
+            <th><input type="button" value="6" onclick="añadir(6)"></th>
+            <th><input type="button" value="+" onclick="operador('+')"></th>
+        </tr>
+
+        <tr>
+            <th><input type="button" value="1" onclick="añadir(1)"></th>
+            <th><input type="button" value="2" onclick="añadir(2)"></th>
+            <th><input type="button" value="3" onclick="añadir(3)"></th>
+        </tr>
+
+        <tr>
+            <th><input type="button" value="0" onclick="añadir(0)"></th>
+            <th></th>
+            <th><input type="button" value="." onclick="punto('.')"></th>
+            <th><input type="button" value="=" onclick="solucion()"></th>
+        </tr>
+
+    </table>
+
+    <script src="U03-A18-JMondelo.js"></script>
+
+</body>
+</html>

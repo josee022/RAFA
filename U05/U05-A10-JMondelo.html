@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <script src="U05-A10-JMondelo.js"></script>
+</head>
+
+<body>
+    <form id="formulario" action="mailto:jose.mondelo@iesdonana.org" method="post" enctype="text/plain">
+
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <br>
+            <label for="nombre">Introduce tu nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br><br>
+            <label for="Mensaje">Mensaje:</label>
+            <br>
+            <textarea for="Mensaje" rows="10" cols="50" id="Mensaje" name="Mensaje"></textarea>
+            <br>
+        </fieldset>
+        <br>
+
+        <label for="color">Elige un color:</label>
+        <br>
+        <input type="radio" id="colorRojo" name="color" value="rojo">
+        <label for="colorRojo">rojo</label>
+        <br>
+        <input type="radio" id="colorVerde" name="color" value="verde">
+        <label for="colorVerde">verde</label>
+        <br>
+        <input type="radio" id="colorAzul" name="color" value="azul">
+        <label for="colorAzul">azul</label>
+        <br><br>
+
+        <label for="asignatura">Selecciona una asignatura:</label>
+        <select name="asignatura" id="asignatura">
+            <option value="matematicas">matematicas</option>
+            <option value="lengua">lengua</option>
+            <option value="ingles">ingles</option>
+        </select>
+        <br><br>
+
+        <label for="diasDisponibles">Selecciona los dias con disponibilidad:</label>
+        <br>
+        <input type="checkbox" id="diaLunes" name="dia" value="lunes" onclick="diaSeleccionado()">
+        <label for="diaLunes">lunes</label>
+        <br>
+        <input type="checkbox" id="diaMartes" name="dia" value="martes" onclick="diaSeleccionado()">
+        <label for="diaMartes">martes</label>
+        <br>
+        <input type="checkbox" id="diaMiercoles" name="dia" value="miercoles" onclick="diaSeleccionado()">
+        <label for="diaMiercoles">miercoles</label>
+        <br>
+        <input type="checkbox" id="diaJueves" name="dia" value="jueves" onclick="diaSeleccionado()">
+        <label for="diaJueves">jueves</label>
+        <br>
+        <input type="checkbox" id="diaViernes" name="dia" value="viernes" onclick="diaSeleccionado()">
+        <label for="diaViernes">viernes</label>
+        <br><br>
+
+        <label for="diaPreferente">Selecciona el dia preferente:</label>
+        <select id="diaPreferente" name="diaPreferente">
+            <option value="lunes">Lunes</option>
+            <option value="martes">Martes</option>
+            <option value="miercoles">Miércoles</option>
+            <option value="jueves">Jueves</option>
+            <option value="viernes">Viernes</option>
+        </select>
+        <br><br>
+
+        <button type="submit"> Haz click para enviar informacion </button>
+        <button type="reset"> Comenzar a rellenar de nuevo </button>
+        <button>
+            <a href="https://www.google.com" style="text-decoration: none; color: black;">
+                Haz click sobre mi.
+            </a>
+        </button>
+
+    </form>
+</body>
+
+</html>

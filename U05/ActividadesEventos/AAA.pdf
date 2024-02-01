@@ -1,0 +1,99 @@
+EJERCICIO 1 :
+Realizar un script que cuando pulse el usuario con el botón del ratón en cualquier sitio de la
+pantalla, identifique si ha pulsado con el botón derecho, izquierdo o la rueda central.
+
+
+
+EJERCICIO 2 :
+Realizar un script que permita mover una caja dentro de la ventana del navegador tanto con las
+teclas de desplazamiento del teclado central como con las del teclado numérico.
+
+
+
+EJERCICIO 3 :
+Realizar las acciones necesarias para deshabilitar el botón derecho del ratón al hacer click sobre
+la ventana del navegador.
+
+
+
+EJERCICIO 4 :
+Realizar un script que, al pulsar un botón del ratón, el color de fondo del cuadro de mensaje
+debe ser amarillo (#FFFF00) y cuando se pulsa una tecla, el color de fondo debe ser azul
+(#CCE6FF). Al volver a mover el ratón, el color de fondo vuelve a ser blanco.
+
+
+
+EJERCICIO 5 :
+Coloque en la aplicación una imagen, y que se cambie por otra imagen, y ésta se mantenga
+mientras el usuario está pulsando algún botón del ratón, cuando suelte debe volver la primera
+imagen.
+
+
+
+EJERCICIO 6 :
+Realizar un script que al terminarse de cargar, muestre un mensaje indicando que la página se ha
+cargado correctamente y dando la bienvenida.Realizar un script que al terminarse de cargar, muestre un mensaje indicando que la página se ha
+cargado correctamente y dando la bienvenida.
+
+
+
+EJERCICIO 7 :
+Realiza una aplicación que tenga una imagen, y que muestre un mensaje indicando si la imagen
+no se ha cargado correctamente, ya sea por un error o porque el usuario lo haya detenido.
+
+
+
+EJERCICIO 8 :
+Realiza el siguiente formulario
+- Cuando pulse Haz clic para enviar información, se enviará la información a un correo
+electrónico en texto plano.
+- Cuando pulse en Haz clic sobre mí, se redirigirá a la página degoogle.
+
+
+
+EJERCICIO 9 :
+Modifica elformularioanterior,segúnlamateria seleccionada,debe enviarle el cuestionario aun
+profesor distinto.
+
+
+
+EJERCICIO 10 :
+Modifica el formulario anterior, siendo el día preferente el día que haya marcado como
+disponible. Si marca varios, que coja el último.
+
+
+
+EJERCICIO 11 :
+Modifica el formulario anterior,según el color de icono seleccionado, cambie el color de fondo
+del formulario.
+
+
+
+EJERCICIO 12 :
+Valida el siguiente formulario. Valide también que no puedan dejarse en blanco. Validar el
+formulario ayudándote de los atributos de html5. La validación se debe realizar poco a poco
+según el usuario vaya rellenando los campos. En caso de introducir un valor incorrecto,
+limpiar el campo.
+
+
+
+EJERCICIO 13 :
+Modifique el ejercicio anterior para que los mensajes sean personalizados
+
+
+
+EJERCICIO 14 :
+Modifique el ejercicio anterior para que cuando el usuario introduzca los datos
+correctamente en el formulario introduzca estos datos en cookies y proporcione al
+formulario un botón para que estos puedan ser leídos.
+
+
+
+EJERCICIO 15 :
+. Realice un script que permita llevar un contador de todaslas veces que se ha visitado una
+página.
+
+
+
+EJERCICIO 16 :
+Realice un script que permite llevar a cabo la siguiente encuesta:

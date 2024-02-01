@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('Buscaminas.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#tablero {
+    display: grid;
+    grid-template-columns: repeat(8, 100px);
+    grid-template-rows: repeat(8, 100px);
+}
+
+.casilla {
+    background-color: rgb(200, 243, 247);
+    border: 2px solid rgb(29, 150, 161);
+    text-align: center;
+    line-height: 32px;
+}
+
+.casilla.revelada {
+    background-color: #ffffff;
+    border: 2px solid rgb(29, 150, 161);
+}
+
+.casilla.revelada.bomba {
+    background-color: red;
+    border: 2px solid rgb(29, 150, 161);
+}
+
+.casilla.bomba-mostrada {
+    background-color: red; 
+    border: 2px solid rgb(29, 150, 161);
+}
+
+.mensaje {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    padding: 20px;
+    display: none;
+}
+
+#mensajeDerrota.mostrando {
+    display: block;
+    background-color: red;
+    color: #fff;
+}
+
+#mensajeVictoria.mostrando {
+    display: block;
+    background-color: green;
+    color: #fff;
+}

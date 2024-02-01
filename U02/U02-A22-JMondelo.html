@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del asesino</title>
+</head>
+
+<body>
+
+    <h1>Misterio del asesino</h1>
+
+    <label for="habitacion">Selecciona la habitación donde se cometió el asesinato :</label>
+    <select id="habitacion">
+        <option value="salón de baile">Salón de Baile</option>
+        <option value="galeria">Galería</option>
+        <option value="sala de billar">Sala de Billar</option>
+        <option value="comedor">Comedor</option>
+    </select><br>
+
+    <label for="sospechoso">Selecciona al sospechoso :</label>
+    <select id="sospechoso">
+        <option value="Sr Parker">Sr Parker</option>
+        <option value="Sra Van Cleve">Sra Van Cleve</option>
+        <option value="Sra Sparr">Sra Sparr</option>
+        <option value="Sr Kalehoff">Sr Kalehoff</option>
+    </select><br>
+
+    <button onclick="solucion_asesino()">Resolver misterio</button><br>
+
+    <div id="div1"></div>
+
+    <script src="U02-A22-JMondelo.js"></script>
+
+</body>
+
+</html>

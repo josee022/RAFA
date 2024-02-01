@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entradas y Salidas</title>
+</head>
+
+<body>
+
+    <div>
+        <h1 id="cabecera">Datos del usuario :</h1>
+        <div id="div1"></div>
+        <div id="div2"></div>
+        <div id="div3"></div>
+    </div>
+
+    <script>
+        debugger;
+        console.log("Mensaje para ver como se comporta la variable en consola")
+
+        document.write("<p>Primera interaccion sobre datos de usuarios</p>");
+
+        alert("Hola buenas, a continuación recogeremos datos sobre su nombre.");
+        var nombre = prompt("Introduzca su nombre y apellidos:");
+        document.getElementById("div1").innerHTML = ("<p>Nombre completo: " + nombre + "</p>");
+
+        alert("Ahora vamos a recoger su edad.");
+        var edad = parseInt(prompt("Introduzca su edad:"));
+        document.getElementById("div2").innerHTML = ("<p>Edad: " + edad + "</p>");
+
+        var c = confirm("Para validar el proceso pulse Aceptar:");
+        if (c) {
+            document.getElementById("div3").innerHTML = "Su elección fue aceptar, gracias por seguir nuestros pasos y validar el proceso.";
+        } else {
+            document.getElementById("div3").innerHTML = "Su elección fue cancelar, puede volver en cualquier otro momento, gracias.";
+        }
+    </script>
+
+</body>
+
+</html>

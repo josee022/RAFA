@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11</title>
+
+</head>
+
+<body>
+
+    <div id="contenedor">
+        <form action="mailto:Rafael.Figueroa@iesdonana.org" method="post">
+
+            <label for="cafes">¿Qué tipo de café te gusta más?</label><br>
+
+            <div class="opcion">
+                <input type="radio" name="cafes" value="CafeSolo">
+                <label>Café solo</label>
+            </div>
+
+            <div class="opcion">
+                <input type="radio" name="cafes" value="CafeConLeche">
+                <label>Café con leche</label>
+            </div>
+
+            <div class="opcion">
+                <input type="radio" name="cafes" value="CafeDescafeinado">
+                <label>Café Descafeinado</label>
+            </div>
+
+            <div class="opcion">
+                <input type="radio" name="cafes" value="CafeConHielo">
+                <label>Café con hielo</label>
+            </div>
+            <br>
+            <button type="button" id="votar">Votar!</button>
+            <br><br><br>
+            <div>
+                <progress id="CafeSolo" value="0" max="100"></progress>
+                <label for="CafeSolo">Café solo</label>
+                <span id="porcentajeCafeSolo">0%</span>
+            </div><br>
+            <div>
+                <progress id="CafeConLeche" value="0" max="100"></progress>
+                <label for="CafeConLeche">Café con leche</label>
+                <span id="porcentajeCafeConLeche">0%</span>
+            </div><br>
+            <div>
+                <progress id="CafeDescafeinado" value="0" max="100"></progress>
+                <label for="CafeDescafeinado">Café descafeinado</label>
+                <span id="porcentajeCafeDescafeinado">0%</span>
+            </div><br>
+            <div>
+                <progress id="CafeConHielo" value="0" max="100"></progress>
+                <label for="CafeConHielo">Café solo con hielo</label>
+                <span id="porcentajeCafeConHielo">0%</span>
+            </div>
+        </form>
+            <br>
+    <script src="11.js" defer></script>
+</body>
+
+</html>

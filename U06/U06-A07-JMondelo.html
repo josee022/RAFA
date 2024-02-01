@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7</title>
+</head>
+<body>
+
+    <h1>Representación del DOM</h1>
+    <div id="dom"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var raiz = document.documentElement;
+
+            mostrarDOM(raiz, 0); //el 0 es la profundidad del nodo
+
+            function mostrarDOM(nodo, profundidad) {  // cojo el nodo y la profundidad de él
+
+                var nodosActuales = `<${nodo.nodeName}>`;
+
+                document.getElementById('dom').textContent += nodosActuales ;
+
+                for (var i = 0; i < nodo.children.length; i++) {
+                    mostrarDOM(nodo.children[i], profundidad + 1);
+                }
+            }
+        });
+    </script>
+</body>
+</html>

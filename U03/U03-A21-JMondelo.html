@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 21</title>
+</head>
+
+<body>
+
+    <div>
+
+        <h2 for="color"> Seleccione un color para el fondo de página : </h2>
+        <select name="color" id="color">
+            <option value="red">rojo</option>
+            <option value="blue">azul</option>
+            <option value="yellow">amarillo</option>
+            <option value="green">verde</option>
+        </select>
+
+        <button onclick="colores()"> Modifica el color </button>
+
+    </div>
+    <br><br>
+
+    <script type="text/javascript">
+
+        document.write("<b>java habilitado</b>: " + navigator.javaEnable + '<br>');
+        document.write("<b>nombre del codigo del navegador</b>: " + navigator.appCodeName + '<br>');
+        document.write("<b>nombre del navegador</b>: " + navigator.appName + '<br>');
+        document.write("<b>version del navegador</b>: " + navigator.appVersion + '<br>');
+        document.write("<b>cookies habilitadas</b>: " + navigator.cookieEnabled + '<br>');
+        document.write("<b>plataforma del navegador</b>: " + navigator.platform + '<br>');
+        document.write("<b>informacion propiedades</b>: " + navigator.userAgent + '<br>');
+        document.write("<b>idioma navegador</b>: " + navigator.language + '<br>');
+        document.write("<b>motor del navegador</b>: " + navigator.product + '<br>');
+        document.write("<b>plugins navegador</b>: " + navigator.plugins + '<br><br>');
+
+        document.write("<b>Altura total</b>: " + screen.heigth + '<br>');
+        document.write("<b>Altura disponible</b>: " + screen.availHeight + '<br>');
+        document.write("<b>Anchura total</b>: " + screen.width + '<br>');
+        document.write("<b>Anchura disponible</b>: " + screen.availWidth + '<br>');
+        document.write("<b>Profundidad de color</b>: " + screen.colorDepth + '<br><br>');
+
+        document.write("<b>Dimensiones barra navegador</b>: <br> <b>Alto</b>: " + window.innerHeight + ' <b>Ancho</b>: ' + window.innerWidth);
+
+        function colores() {
+            var color = document.getElementById('color').value;
+
+            if (color === 'red') {
+                document.body.style.backgroundColor = "red";
+            } else if (color === 'blue') {
+                document.body.style.backgroundColor = "blue";
+            } else if (color === 'yellow') {
+                document.body.style.backgroundColor = "yellow";
+            } else {
+                document.body.style.backgroundColor = "green";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
