@@ -9,24 +9,7 @@
 
     <h1>Representación del DOM</h1>
     <div id="dom"></div>
+    <script src="U06-A07-JMondelo.js"></script>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var raiz = document.documentElement;
-
-            mostrarDOM(raiz, 0); //el 0 es la profundidad del nodo
-
-            function mostrarDOM(nodo, profundidad) {  // cojo el nodo y la profundidad de él
-
-                var nodosActuales = `<${nodo.nodeName}>`;
-
-                document.getElementById('dom').textContent += nodosActuales ;
-
-                for (var i = 0; i < nodo.children.length; i++) {
-                    mostrarDOM(nodo.children[i], profundidad + 1);
-                }
-            }
-        });
-    </script>
 </body>
 </html>
