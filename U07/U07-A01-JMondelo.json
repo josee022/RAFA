@@ -1,0 +1,19 @@
+{
+    "Departamento": {
+
+        "trabajador": [
+            {
+                "nombre": "Pedro",
+                "apellidos": "Ruiz Aranda"
+            },
+            {
+                "nombre": "Isaac",
+                "apellidos": "Sanchez Alcalde"
+            },
+            {
+                "nombre": "Lars",
+                "apellidos": "Armstrong"
+            }
+        ]
+    }
+}
