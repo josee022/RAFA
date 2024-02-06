@@ -1,0 +1,16 @@
+{
+    "ciudades" : [
+        {
+            "nombre" : "cadiz"
+        },
+        {
+            "nombre" : "malaga"
+        },
+        {
+            "nombre" : "almeria"
+        },
+        {
+            "nombre" : "madrid"
+        }
+    ]
+}
