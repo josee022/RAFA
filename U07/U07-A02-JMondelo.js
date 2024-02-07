@@ -1,21 +1,16 @@
-document.addEventListener("DOMContentLoaded", function () {
-    var ciudadInput = document.getElementById("ciudadInput");
-
-    ciudadInput.addEventListener("input", function () {
-        var ciudad = ciudadInput.value;
-        muestraSugerencia(ciudad);
-    });
-});
-
-function muestraSugerencia(ciudad) {
-    var llamada = new XMLHttpRequest();
-
-    llamada.onreadystatechange = function () {
+document.addEventListener("input", function () {
+    let ciudades = document.getElementById('ciudad').value;
+    let objeto = new XMLHttpRequest();
+    objeto.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("ciudades").innerHTML = this.responseText;
+            let sugerencias = JSON.parse(this.responseText);
+            let mostrar = document.getElementById('sugerencias');
+            mostrar.innerHTML = `sugerencias : ${sugerencias.join(
+            if (input === "") {
+                mostrar.innerHTML = "sugerencias :";
+            }
         }
     };
-
-    llamada.open("GET", "U07-A02-JMondelo.php?ciudad=" + ciudad, true);
-    llamada.send();
-}
+    objeto.open("GET", `U07-A02-JMondelo.php?sugerencia=${input}`, true);
+    objeto.send();
+});
