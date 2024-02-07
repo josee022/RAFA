@@ -1,14 +1,21 @@
-function cargarJSON() {
-    fetch('U07-A02-JMondelo.json')
-        .then(response => response.json())
-        .then(data => {
-            var listaJSON = '';
-            for (var i = 0; i < data.ciudades.length; i++) {
-                var nombre = data.ciudades[i];
-                listaJSON += nombre.nombre + '<br>';
-            }
+document.addEventListener("DOMContentLoaded", function () {
+    var ciudadInput = document.getElementById("ciudadInput");
 
-            document.getElementById('label').innerHTML = '<strong> Sugerencias :</strong> <br>' + listaJSON ;
-        })
+    ciudadInput.addEventListener("input", function () {
+        var ciudad = ciudadInput.value;
+        muestraSugerencia(ciudad);
+    });
+});
+
+function muestraSugerencia(ciudad) {
+    var llamada = new XMLHttpRequest();
+
+    llamada.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("ciudades").innerHTML = this.responseText;
+        }
+    };
+
+    llamada.open("GET", "U07-A02-JMondelo.php?ciudad=" + ciudad, true);
+    llamada.send();
 }
-cargarJSON();
