@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta Interactiva</title>
+</head>
+<body>
+    <h1>Encuesta</h1>
+    <form>
+        <label>
+            <input type="radio" name="opcion" value="opcion1" onclick="enviarVoto('opcion1')"> Opción 1
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="opcion" value="opcion2" onclick="enviarVoto('opcion2')"> Opción 2
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="opcion" value="opcion3" onclick="enviarVoto('opcion3')"> Opción 3
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="opcion" value="opcion4" onclick="enviarVoto('opcion4')"> Opción 4
+        </label>
+    </form>
+    <div id="resultados"></div>
+    <script src="U07-A03-JMondelo.js"></script>
+</body>
+</html>
