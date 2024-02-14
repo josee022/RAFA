@@ -1,11 +1,12 @@
-function enviarVoto(voto) {
-    var xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState == 4 && xhr.status == 200) {
-            // Actualizar la página con los resultados
-            document.getElementById("resultados").innerHTML = xhr.responseText;
+var votos = document.getElementById("votar");
+var radio = document.getElementsByName("equipo");
+votos.onclick = ()=>{
+    radio.forEach((bucle, i) => {
+      if (radio[i].checked){
+        fetch('U07-A03-JMondelo.php?input=' + radio[i].value)
+                .then(function(response) {
+                    return response.text();
+                })
         }
-    };
-    xhr.open("GET", "U07-A03-JMondelo.php?voto=" + voto, true);
-    xhr.send();
+    })
 }
