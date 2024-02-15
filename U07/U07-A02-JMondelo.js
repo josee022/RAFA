@@ -1,16 +1,32 @@
-document.addEventListener("input", function () {
-    let ciudades = document.getElementById('ciudad').value;
-    let objeto = new XMLHttpRequest();
-    objeto.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            let sugerencias = JSON.parse(this.responseText);
-            let mostrar = document.getElementById('sugerencias');
-            mostrar.innerHTML = `sugerencias : ${sugerencias.join(
-            if (input === "") {
-                mostrar.innerHTML = "sugerencias :";
-            }
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('ciudad').addEventListener('input', function() {
+        var ciudad = this.value;
+        if (ciudad.length > 0) {
+            fetch('U07-A02-JMondelo.php?input=' + ciudad)
+                .then(function(response) {
+                    if (!response.ok) {
+                        throw new Error('Error en la respuesta de la solicitud.');
+                    }
+                    return response.json();
+                })
+                .then(function(data) {
+                    mostrarSugerencias(data);
+                })
+                .catch(function(error) {
+                    console.error('Error en la solicitud:', error);
+                });
+        } else {
+            document.getElementById('sugerencias').innerHTML = '';
         }
-    };
-    objeto.open("GET", `U07-A02-JMondelo.php?sugerencia=${input}`, true);
-    objeto.send();
+    });
+
+    function mostrarSugerencias(sugerencias) {
+        var sugerenciasList = document.getElementById('sugerencias');
+        sugerenciasList.innerHTML = '';
+        sugerencias.forEach(function(ciudad) {
+            var li = document.createElement('li');
+            li.textContent = ciudad;
+            sugerenciasList.appendChild(li);
+        });
+    }
 });

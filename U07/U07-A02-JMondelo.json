@@ -1,10 +1,14 @@
 [
-    {"ciudad" : "madrid"},
-    {"ciudad" : "malaga"},
-    {"ciudad" : "sanlucar"},
-    {"ciudad" : "salamanca"},
-    {"ciudad" : "barcelona"},
-    {"ciudad" : "cordoba"},
-    {"ciudad" : "almeria"},
-    {"ciudad" : "tenerife"}
+    "Sanlucar de barrameda",
+    "Jerez de la frontera",
+    "Puerto de santa maria",
+    "Rota",
+    "Cadiz",
+    "Sevilla",
+    "Cordoba",
+    "Jaen",
+    "Granada",
+    "Huelva",
+    "Malaga",
+    "Almeria"
 ]
